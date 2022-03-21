@@ -1,27 +1,21 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { appWithTranslation, useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Portfolio of David Goergens</title>
-        <link
-          rel="icon"
-          type="image/icon"
-          sizes="16x16"
-          href="../public/D.svg"
-        />
-        <meta
-          name="description"
-          content="Webdev portfolio of David Goergens"
-        />
-        <meta name="author" content="David Goergens" />
+        <title>Portfolio of D.G.</title>
+        <link rel="icon" type="image/icon" sizes="16x16" href="/D.svg" />
+        <meta name="description" content="Webdev portfolio of D.G." />
+        <meta name="author" content="D.G." />
       </Head>
       <Component {...pageProps} />
     </>
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);
