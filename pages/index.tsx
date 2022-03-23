@@ -17,8 +17,8 @@ const Home: NextPage = (props) => {
         <div className=" bg-fixed bg-center bg-cover bg-hero w-screen  flex flex-col items-center justify-start py-48 gap-2 text-center">
           <Hero />
           <Tech />
+          <Projects />
         </div>
-        <Projects />
       </main>
     </>
   );
@@ -26,7 +26,12 @@ const Home: NextPage = (props) => {
 
 export const getStaticProps = async ({ locale }: any) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common", "navbar", "hero"])),
+    ...(await serverSideTranslations(locale, [
+      "common",
+      "navbar",
+      "hero",
+      "projects",
+    ])),
   },
 });
 
