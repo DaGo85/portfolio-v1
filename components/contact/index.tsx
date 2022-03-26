@@ -13,7 +13,6 @@ function Contact() {
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const [isError, setIsError] = useState<boolean>(false);
 
-  console.log(name + email + msg);
   const { t } = useTranslation("contact");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -41,7 +40,7 @@ function Contact() {
   };
 
   return (
-    <section className="w-11/12 py-4">
+    <section className="py-4">
       <ContactTitle title={t("h2-contact")} />
       <form
         onSubmit={handleSubmit}
