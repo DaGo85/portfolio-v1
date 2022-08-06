@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const item = {
   hidden: { opacity: 0 },
-  show: { opacity: 1 },
+  visible: { opacity: 1 },
 };
 
 function HeroButton() {
