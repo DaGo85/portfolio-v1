@@ -15,7 +15,7 @@ function TechIcons() {
             transition={{ duration: 0.3, delay: 0.07 * index }}
             viewport={{ once: true }}
             key={icon.name}
-            className="block flex-col m-4 w-[70px] lg:w-[100px] items-center justify-center"
+            className="block m-4 w-[70px] lg:w-[100px]"
           >
             <Image
               src={`/tech-icons/${icon.svg}`}

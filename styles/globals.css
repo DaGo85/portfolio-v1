@@ -55,7 +55,7 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 18px;
-    z-index: 2;
+    z-index: 30;
   }
 
   .next {
