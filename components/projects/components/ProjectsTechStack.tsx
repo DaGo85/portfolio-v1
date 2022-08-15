@@ -14,8 +14,10 @@ function ProjectsTechStack({ techstack }: ProjectsTechStackI) {
             <Image
               src={`/tech-icons/${icon.svg}`}
               alt="tech-icon"
-              height={100}
+              layout="responsive"
               width={100}
+              height={100}
+              sizes="(min-width: 768px) 80px, 60px"
             />
             <p>{icon.name}</p>
           </li>

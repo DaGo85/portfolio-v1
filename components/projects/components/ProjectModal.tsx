@@ -88,18 +88,24 @@ function ProjectModal({ modal, setModal }: ModalI) {
                 layout="fill"
                 objectFit="contain"
               />
-              <div
+              <button
                 onClick={() => paginate(-1)}
                 className="w-20 h-20 prev bg-buttonB text-buttonBOn hover:bg-buttonB/70"
               >
                 {"‣"}
-              </div>
-              <div
+              </button>
+              <button
                 onClick={() => paginate(1)}
                 className="w-20 h-20 next bg-buttonB text-buttonBOn hover:bg-buttonB/70"
               >
                 {"‣"}
-              </div>
+              </button>
+              <button
+                onClick={() => handleClose()}
+                className="w-20 h-20 exit bg-buttonB text-buttonBOn hover:bg-buttonB/70"
+              >
+                X
+              </button>
             </motion.div>
           </>
         )}

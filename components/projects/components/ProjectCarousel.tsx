@@ -14,7 +14,7 @@ const variants = {
   },
 
   center: {
-    zIndex: 1,
+    zIndex: 20,
     x: 0,
     opacity: 1,
   },
@@ -79,18 +79,18 @@ function ProjectCarousel({ data, setModal }: CarouselI) {
           />
         </motion.div>
       </AnimatePresence>
-      <div
+      <button
         className="next bg-buttonB text-buttonBOn hover:bg-buttonB/70"
         onClick={() => paginate(1)}
       >
         {"‣"}
-      </div>
-      <div
+      </button>
+      <button
         className="prev bg-buttonB text-buttonBOn hover:bg-buttonB/70"
         onClick={() => paginate(-1)}
       >
         {"‣"}
-      </div>
+      </button>
     </>
   );
 }
