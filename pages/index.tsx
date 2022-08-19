@@ -31,24 +31,23 @@ const Home: NextPage = (props) => {
     <>
       <NavBar scrollTarget={scrollTarget} />
       <main>
-        <div className="relative flex flex-col items-center justify-start w-screen gap-2 text-center bg-fixed bg-center bg-cover bg-hero">
-          <Hero handleSectionChange={handleSectionChange} />{" "}
-          <AnimatePresence>
-            {(scrollTarget === "projects" || scrollTarget === "tech") && (
-              <motion.div
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1.2 }}
-                initial={{ opacity: 0 }}
-                exit={{ opacity: 0 }}
-                className={`bg-fadeIn w-screen h-screen fixed top-0 left-0 z-1`}
-              ></motion.div>
-            )}
-          </AnimatePresence>
-          <Tech handleSectionChange={handleSectionChange} />
-          <Projects handleSectionChange={handleSectionChange} />
-          <Contact handleSectionChange={handleSectionChange} />
-          <Impressum handleSectionChange={handleSectionChange} />
-        </div>
+        <div className="fixed z-[-1] flex flex-col items-center justify-start w-screen h-screen gap-2 text-center bg-fixed bg-center bg-cover bg-hero"></div>
+        <Hero handleSectionChange={handleSectionChange} />{" "}
+        <AnimatePresence>
+          {(scrollTarget === "projects" || scrollTarget === "tech") && (
+            <motion.div
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.2 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              className={`bg-fadeIn w-screen h-screen fixed top-0 left-0 z-1`}
+            ></motion.div>
+          )}
+        </AnimatePresence>
+        <Tech handleSectionChange={handleSectionChange} />
+        <Projects handleSectionChange={handleSectionChange} />
+        <Contact handleSectionChange={handleSectionChange} />
+        <Impressum handleSectionChange={handleSectionChange} />
       </main>
     </>
   );
