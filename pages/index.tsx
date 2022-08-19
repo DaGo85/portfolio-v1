@@ -31,7 +31,7 @@ const Home: NextPage = (props) => {
     <>
       <NavBar scrollTarget={scrollTarget} />
       <main>
-        <div className="relative flex flex-col items-center justify-start w-full h-screen gap-2 text-center bg-fixed bg-center bg-cover bg-hero">
+        <div className="relative flex flex-col items-center justify-start w-full gap-2 text-center bg-fixed bg-center bg-contain md:bg-cover bg-hero">
           <Hero handleSectionChange={handleSectionChange} />{" "}
           <AnimatePresence>
             {(scrollTarget === "projects" || scrollTarget === "tech") && (
