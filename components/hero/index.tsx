@@ -23,13 +23,13 @@ const item = {
 };
 
 function Hero({ handleSectionChange }: SectionChangeI) {
-  const { t } = useTranslation("hero");
+  const { t } = useTranslation("common");
 
   return (
     <InView threshold={0.8} onChange={handleSectionChange}>
       {({ ref }) => (
         <section ref={ref} id="hero" className="relative w-full h-screen">
-          {/* <motion.div
+          <motion.div
             className="absolute flex flex-col text-left left-1/4 top-1/4 "
             initial="hidden"
             animate="visible"
@@ -40,10 +40,10 @@ function Hero({ handleSectionChange }: SectionChangeI) {
               variants={item}
               className="text-2xl font-medium max-w-[320px] md:max-w-[720px]"
             >
-              {t("p-1-hero")}
-      </motion.p>
+              {t("p-hero")}
+            </motion.p>
             <HeroButton />
-          </motion.div>*/}
+          </motion.div>
           <a
             aria-label="scroll to tech section"
             href="#tech"
