@@ -7,9 +7,8 @@ module.exports = {
     locale: "de",
     defaultLocale: "de",
     locales: ["en", "de"],
-    localePath: path.resolve("./public/locales"),
-    otherLanguages: ["en", "de"],
     defaultLanguage: "de",
-    fallbackLng: ["de"],
   },
+  fallbackLng: { default: ["de"], "de-CH": ["de"] },
+  localePath: path.resolve("./public/locales"),
 };
