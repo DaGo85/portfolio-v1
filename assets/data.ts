@@ -50,7 +50,14 @@ export const socialIconsList: SocialIconsI[] = [
 export const projectContent: ProjectsI[] = [
   {
     title: "Photo Artist App",
-    preview: ["port.jpg", "port.jpg"],
+    preview: [
+      "photo-blog.jpeg",
+      "photo-contact.jpeg",
+      "photo-gallery.jpeg",
+      "photo-mobile-story.jpeg",
+      "photo-modal.jpeg",
+      "photo-stories.jpeg",
+    ],
     livelink: "https://github.com/",
     github: "https://github.com/",
     techstack: [
