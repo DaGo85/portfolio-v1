@@ -52,7 +52,7 @@ export const projectContent: ProjectsI[] = [
     title: "Photo Artist App",
     preview: [
       "photo-blog.jpeg",
-      "photo-contact.jpeg",
+      "photo-contact.JPG",
       "photo-gallery.jpeg",
       "photo-mobile-story.jpeg",
       "photo-modal.jpeg",
@@ -102,7 +102,13 @@ export const projectContent: ProjectsI[] = [
   },
   {
     title: "Portfolio",
-    preview: ["neu.JPG", "portrait.jpg", "neu.JPG", "portrait.jpg", "neu.JPG"],
+    preview: [
+      "portfolio-hero.JPG",
+      "portfolio-contact.JPG",
+      "portfolio-mobile-impressum.JPG",
+      "portfolio-projects.JPG",
+      "portfolio-tech.JPG",
+    ],
     livelink: "https://www.davidgo.ch",
     github: "https://github.com/DaGo85/portfolio-v1",
     techstack: [
