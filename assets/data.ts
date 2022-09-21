@@ -86,7 +86,7 @@ export const projectContent: ProjectsI[] = [
       "foody-mobile-recipes.jpg",
       "foody-auth.jpg",
     ],
-    livelink: "https://www.foody.davidgo.ch",
+    livelink: "https://foody.davidgo.ch",
     github: "https://github.com/DaGo85/recipe-app",
     techstack: [
       { name: "JavaScript", svg: "javascript.svg" },
