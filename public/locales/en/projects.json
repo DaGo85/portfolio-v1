@@ -5,6 +5,6 @@
     "- Fullstack web application using MySQL, Express.js, React and Node.js\n- Animated with Framer Motion and styled with Tailwind\n- Firebase Authentication integrated\n- Option to add recipes with selectable tags, description and images\n- Search in the database for recipes by name, tag, and/or description\n- Statistics based on the data from the database\n- Dark and Light mode ",
     "- Next.js web application to showcase my personal projects\n- Animated with Framer Motion and styled with Tailwind\n- Lighthouse analytics rating of 100/100\n- Multi-language support using I18next, currently supporting English and German\n- Use of TypeScript to provide optional type safety, better code readability, and improved maintainability",
     "- My personal interpretation and representation of data from openweatherapi.com\n- Next.js web app with a Lighthouse analytics rating of 100/100\n- Styled with Tailwind\n- Graphical representation of weather data over time using d3\n- Comprehensive preview and forecast of weather\n- Automatic completion and suggestions based on the user's input letters to simplify the search",
-    "angular"
+    "- Recreation of my weather App, this time with Angular\n- Styled with SCSS\n- Graphical representation of weather data over time using d3\n- Comprehensive preview and forecast of weather\n- Automatic completion and suggestions based on the user's input letters to simplify the search"
   ]
 }
