@@ -161,7 +161,7 @@ export const projectContent: ProjectsI[] = [
 export const impressumData = {
   address: {
     name: "David Goergens",
-    street: "Lutertal Strasse 25",
+    street: "Lutertalstrasse 25",
     city: "3065 Bolligen",
   },
   contact: {
