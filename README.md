@@ -72,3 +72,4 @@ There are a lot of more options for improvements.
 
 Feel free to use this code for your own projects!
 You have to change your personal data in /assets/data.ts. Also you have to adjust the translations in /public/locales/de and /eng.
+.
